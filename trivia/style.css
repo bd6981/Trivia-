@@ -26,12 +26,71 @@ h1 {
     border: none;
     color: blue;
 }
-.card_container {
-    height: 320px;
-    width: 250px;
+.card_container1 {
+    text-align: center;
+    height: 300px;
+    width: 500px;
     top: 50%;
     left: 50%;
     position: absolute; 
     transform: translate(-50%, -50%);
     background-color: antiquewhite;
+    box-shadow: 10px 10px 10px black;
+    opacity: 70%;
+
+}
+.chooseAnswer1  {
+    text-align: center;
+    height: 150px;
+    width: 500px;
+    top: 80%;
+    left: 65%;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 10px black;
+    opacity: 70%;
+    
+
+}
+
+.chooseAnswer2  {
+    text-align: center;
+    height: 150px;
+    width: 500px;
+    top: 80%;
+    left: 35%;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 10px black;
+    opacity: 70%;
+}
+.next {
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    top: 55%;
+    left: 95%;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    background-color:antiquewhite;
+    box-shadow: 10px 10px 10px black;
+    font-size: 20px;
+    font-weight: 300;
+}
+.scoreBoard {
+    text-align: center;
+    height: 80px;
+    width: 400px;
+    top: 15%;
+    left: 50%;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    background-color:antiquewhite;
+    box-shadow: 10px 10px 10px black;
+    font-size: 20px;
+    margin-top: 0%;
+    font-style: bold;
+
 }
