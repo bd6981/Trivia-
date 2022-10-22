@@ -11,3 +11,4 @@ const answerButton2 = document.querySelector('.A2Text')
 answerButton1.addEventListener('click', answerButton1)
 annswerButton2.addEventListener('click', answerButton2)
 nextButton.addEventListener('click', )
+

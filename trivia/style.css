@@ -5,42 +5,33 @@ body {
 
 
 h1 {
-    background-color: rgb(215, 212, 207);
-    color: rgb(49, 34, 34);
+    background-color: antiquewhite;
+   
     text-align: center;
     margin: 0;
     padding: 30px 0;
-    box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 10px black;
 }
-
-.card {
-    display: flex;
-    flex-direction: column;
-
-    color: grey:
+.A1 {
+    size: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: black
 }
-.container {
-    height: 80px:
+.A2 {
+    size: 20px;
+    margin-top: 40px;
+    padding: 0;
+    border: none;
+    color: blue;
 }
-.card__cover {
-    height: 70px;
-    width: 50%;
-    background-color: black;
-    align-items: center;
-    margin: auto;
-}
-
-.card__content {
-    flex-wrap: wrap;
-    background-color:black; 
-    height: 50px;
-    width: 50%;
-    align-items: center;
-    margin: auto;
-}
-button {
-    display: flex;
-    align-items: flex-end;
-    color: aqua;
-    align-content: 
+.card_container {
+    height: 320px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
 }
