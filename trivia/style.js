@@ -1,14 +1,16 @@
-const questionCard = document.querySelector('.triviaContainer')
-const questionCardText = document.querySelector('.triviaContainerText')
-const triviaCard = document.querySelector('.triviaCard')
-const triviaCardText = document.querySelector('.card__content')
-const triviaCardCover = document.querySelector('.card__cover')
-const nextButton = document.querySelector('button')
-const answerButton1 = document.querySelector('.A1')
-const answerButton1Text = document.querySelector('.A1Text')
-const annswerButton2 = document.querySelector('.A2')
-const answerButton2 = document.querySelector('.A2Text')
-answerButton1.addEventListener('click', answerButton1)
-annswerButton2.addEventListener('click', answerButton2)
-nextButton.addEventListener('click', )
+
+// Button,Elements,EventListeners
+const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
+
+startGame.addEventListener('click', startGame)
+
+
+nextQuestion.addEventListener('click', () => {
+  currentQuestionIndex++
+  setNextQuestion()
+})
 

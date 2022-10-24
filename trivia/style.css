@@ -1,96 +1,30 @@
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-h1 {
-    background-color: antiquewhite;
+.gameContainer {
    
+    width: 80%;
+    height: 90ch;
+    background: rgba(10,10,10,0.8);
+    border-radius: 5px;
     text-align: center;
-    margin: 0;
-    padding: 30px 0;
-    box-shadow: 10px 10px 10px black;
-}
-.A1 {
-    size: 20px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    color: black
-}
-.A2 {
-    size: 20px;
-    margin-top: 40px;
-    padding: 0;
-    border: none;
-    color: blue;
-}
-.card_container1 {
-    text-align: center;
-    height: 300px;
-    width: 500px;
-    top: 50%;
-    left: 50%;
-    position: absolute; 
-    transform: translate(-50%, -50%);
-    background-color: antiquewhite;
-    box-shadow: 10px 10px 10px black;
-    opacity: 70%;
-
-}
-.chooseAnswer1  {
-    text-align: center;
-    height: 150px;
-    width: 500px;
-    top: 80%;
-    left: 65%;
-    position: absolute; 
-    transform: translate(-50%, -50%);
-    background-color: antiquewhite;
-    box-shadow: 10px 10px 10px black;
-    opacity: 70%;
+    margin: 0 auto;
     
-
+    
 }
+h1 {
+color: antiquewhite;
+margin-top: 10%;
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size:400%;
+text-decoration: underline;
 
-.chooseAnswer2  {
-    text-align: center;
-    height: 150px;
-    width: 500px;
-    top: 80%;
-    left: 35%;
-    position: absolute; 
-    transform: translate(-50%, -50%);
+ }     
+.question-content {
     background-color: antiquewhite;
-    box-shadow: 10px 10px 10px black;
-    opacity: 70%;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size:300%;
 }
-.next {
-    text-align: center;
-    height: 60px;
-    width: 100px;
-    top: 55%;
-    left: 95%;
-    position: absolute; 
-    transform: translate(-50%, -50%);
-    background-color:antiquewhite;
-    box-shadow: 10px 10px 10px black;
-    font-size: 20px;
-    font-weight: 300;
-}
-.scoreBoard {
-    text-align: center;
-    height: 80px;
-    width: 400px;
-    top: 15%;
-    left: 50%;
-    position: absolute; 
-    transform: translate(-50%, -50%);
-    background-color:antiquewhite;
-    box-shadow: 10px 10px 10px black;
-    font-size: 20px;
-    margin-top: 0%;
-    font-style: bold;
 
+* {
+  background-color: antiquewhite;
 }
