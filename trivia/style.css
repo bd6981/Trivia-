@@ -1,3 +1,11 @@
+/* const startGameButton = document.getElementById('startGameBtn');
+const nextButton = document.querySelector('nextButton')
+
+
+const answerButtonsElement = document.getElementById('answerOptionBtn')
+const userAnswerSelection = document.querySelector('userAnswerSelection') */
+
+
 .gameContainer {
    
     width: 80%;
@@ -6,25 +14,57 @@
     border-radius: 5px;
     text-align: center;
     margin: 0 auto;
-    
-    
+
 }
-h1 {
-color: antiquewhite;
+
+.gameTitle {
+    color: black;
+}
+/* h1 {
+color:darkolivegreen
 margin-top: 10%;
 font-family: 'Montserrat', sans-serif;
 font-weight: 700;
 font-size:400%;
 text-decoration: underline;
 
- }     
-.question-content {
+ }      */
+.hide {
     background-color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
 font-weight: 700;
-font-size:300%;
+font-size:200%;
+
 }
 
-* {
+#startGameBtn{
+  margin-top: 10%;
+    margin-bottom: 10%;
+}
+.nextButton{
+  margin-top: 10%;
+    margin-bottom: 10%;
+}
+#questionContainer{
+  margin-top: 10%;
+    margin-bottom: 10%;
+}
+.grid {
+
+}
+#answerOptionBtn:hover{
   background-color: antiquewhite;
+}
+#answerOptionBtn:active{
+  background-color: antiquewhite;
+}
+.userAnswerBtn {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.triviaQuestion {
+  color: black;
+}
+.hide {
+  display: none;
 }
