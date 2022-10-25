@@ -1,4 +1,5 @@
 
+
 // Button,Elements,EventListeners
 const startGameButton = document.getElementById('startGameBtn');
 const nextButton = document.querySelector('nextButton')
@@ -80,3 +81,6 @@ const questions = [
         ]
     }]
 }
+}
+}
+
