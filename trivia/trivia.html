@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Page</title>
-    <link rel="stylesheet" href="trivia.css">
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="trivia.css" media="screen" type="text/css">
 </head>
 <body>
-    <body>
-        <main> 
-             <div class="gameContainer">
-                  <div id="questionContainer" class="hide">
-                    <div class="triviaQuestion"><h1>Question</h1> 
-                      <div id="answerOptionBtn" class="grid">
-                          <button class="userAnswerBtn">Answer 1</button>
-                          <button class="userAnswerBtn">Answer 2</button>
-                  </div>
-              </div>
-              </div>
-              <div class="controls">
-                  <button id="nextQuestionPlease" class="nextButton hide">Next</button>
-              </div>
-            </div>
-             </main>
-    </div>
+    <a href="index.html"></a>
+    <div class="container">
+        <div class="score">
+            <span id="user-score">0</span>
+        <span>/</span>
+            <span id="total-score">0</span>
+        </div>
+        <div id="question-area" class="content">
+            <div id="question-text"></div>
+            <div class="options">
+                <button class="btn btn-option" id="True">true</button>
+                <button class="btn btn-option" id="False">false</button>
+            </div>  
+        </div>
+        <div class="controls">
+            <button class="btn btn-restart" id="restart">Restart</button>
+            <button class="btn btn-prev" id="prev">Prev</button>
+            <button class="btn btn-next" id="next">Next</button>
+            <button class="btn btn-submit" id="submit">Submit</button>
+        </div>
+ 
+        </div>
     <script src="style.js"></script>
-</body>
+    </body>
 </html>
