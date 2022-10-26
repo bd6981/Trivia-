@@ -2,12 +2,14 @@
 
 .container {
    
-    width: 80%;
-    height: 90ch;
-    
+    width: 60%;
+    height: 30px;
+    background-color: black;
+    color: rgb(255, 236, 211);
     border-radius: 5px;
     text-align: center;
     margin: 0 auto;
+    font-size: 40px;
+    text-decoration: underline;
 
  }            
-
