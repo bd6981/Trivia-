@@ -12,13 +12,14 @@
    /* margin-top: 0%; */
    align-items: center;
    text-align: center;
+   text-size-adjust: center;
   
 
  
  }
 
  iframe {
-   margin: 0px;
+   /* margin: 0px; */
    display: flex;
    text-align: center;
    justify-content: center;
@@ -29,33 +30,43 @@
  }
 #restart {
    margin-right:250px;
+   margin-top: 0 auto;
 }
 #submit {
    
-   margin-left: 400px;;
+   margin-left: 400px;
+   margin: 0 auto;
+
  
    }
-
+.container::content{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+}
 
 .hide {
     display: none;
  }
- .options {
-    padding: 10px;
-    order: 3;
- }
+ 
  
  .controls {
     padding: 10px;
     order: 2;
  }
+
+  
+ 
+
  #question-area {
    margin-top: 0px;
    margin-bottom: 0px;
+   text-size-adjust: center;
 
    
 
  }
+ 
 
  .container {
     width: 50vw;
@@ -74,7 +85,7 @@
     font-size:  x-large;
     font-weight: bold;
     color: antiquewhite;
-      margin-top: 10px;
+   
 
  }
  
@@ -87,7 +98,7 @@
  #total-score {
     color: antiquewhite;
     align-items: center;
-    margin-top: auto 0;
+    /* margin-top: auto 0; */
  }
 
  
@@ -104,7 +115,7 @@
 
 
 
-/* CSS */
+
 .button-55 {
   align-self: center;
   background-color: #fff;
@@ -146,4 +157,3 @@
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
-#btnClear{margin-left:100px;}

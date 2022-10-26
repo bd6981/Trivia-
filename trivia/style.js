@@ -16,7 +16,7 @@ submitBtn.addEventListener("click",submit);
 //--------------------------------------------------
 
 //---\/----trivia questions--------\/
-let currentQuestion = 0;
+let currentQuestion = 1;
 let score = 0;
 
 let questions = [
@@ -128,12 +128,12 @@ function beginGame() {
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
         if(questions[currentQuestion].answers[0].answer) {
-            if(score < 14) {
+            if(score < 1) {
                 score++;
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion < 14) {
+        if(currentQuestion < 1) {
             next();
         }
     }
@@ -141,12 +141,12 @@ function beginGame() {
     falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
     falseBtn.onclick = () => {
         if(questions[currentQuestion].answers[1].answer) {
-            if(score < 14) {
+            if(score < 1) {
                 score++;
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion < 14) {
+        if(currentQuestion < 1) {
             next();
         }
     }
@@ -172,7 +172,7 @@ function restart() {
 //--------\/--------Next Question Please--------------\/
 function next() {
     currentQuestion++;
-    if(currentQuestion >= 14) {
+    if(currentQuestion >= 1) {
        ;
     }
     questionText.innerHTML = questions[currentQuestion].question;
