@@ -142,7 +142,7 @@ function submit() {
     submitBtn.classList.add("hide");
     trueBtn.classList.add("hide");
     falseBtn.classList.add("hide");   
-    questionText.innerHTML = "Just remember, You're the rock start!"
+    questionText.innerHTML = "Just remember, You're the rockstar!"
  }
 //------------------------------------------------------------------
 
