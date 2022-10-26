@@ -1,7 +1,7 @@
 
 
 //-----Button,Elements,EventListeners----\/
-const nextBtn = document.getElementById("next");
+// const nextBtn = document.getElementById("next");
 const restartBtn = document.getElementById("restart");
 const submitBtn = document.getElementById("submit");
 const userScore = document.getElementById("user-score");
@@ -11,7 +11,7 @@ const trueBtn = document.getElementById("True");
 const falseBtn = document.getElementById("False");
 
 restartBtn.addEventListener("click",restart);
-nextBtn.addEventListener("click",next);
+// nextBtn.addEventListener("click",next);
 submitBtn.addEventListener("click",submit);
 //--------------------------------------------------
 
@@ -35,10 +35,80 @@ let questions = [
         ]
     },
     {
-        question:"Question: What does Lady Gaga affectionately call her fans?",
+        question:"What does Lady Gaga affectionately call her fans?",
         answers:[
             {option:"Rawwweerrrs",answer:false},
             {option:"Little Monsters",answer:true},
+        ]
+    },
+    {
+        question:"Which blues song was the Rolling Stones named after?",
+        answers:[
+            {option:"Muddy Waters- Rollin Stone",answer:true},
+            {option:"Bob Dylan- Like a Rolling Stone",answer:false},
+        ]
+    },  
+    {
+        question:"In 1970, which singer had a hit with his song “Piano Man”?",
+        answers:[
+            {option:"Billy Joel",answer:true},
+            {option:"Elton John",answer:false},
+        ]
+    },
+    {
+        question:"What is the name of the singer who sings “Push it”??",
+        answers:[
+            {option:"Eazy-E",answer:false},
+            {option:"Salt-N-Pepa",answer:true},
+        ]
+    },
+    {
+        question:"What is the name of a US Singer who was called a King of pop?",
+        answers:[
+            {option:"Michael Jackson", answer:true},
+            {option:"Prince",answer:false},
+        ]
+    },  
+    {
+        question:" Who told us “I Wanna Dance with Somebody” in 1987?",
+        answers:[
+            {option:"Whitney Houston",answer:true},
+            {option:"Tina Turner",answer:false},
+        ]
+    },
+    {
+        question:"In 1969, which legendary US festival was hosted and took place over the 350,000 fans??",
+        answers:[
+            {option:"Woodstock",answer:true},
+            {option:"Lollapalooza",answer:false},
+        ]
+    },
+    {
+        question:"Which Rock Band Had A Number One Hit With “Don’t Stop Believin'” In 1981?",
+        answers:[
+            {option:"Earth, Wind, and Fire",answer:false},
+            {option:"Journey",answer:true},
+        ]
+    },
+    {
+        question:"The first pop music video released is _?",
+        answers:[
+            {option:"In my feelings",answer:false},
+            {option:"Bohemian Rhapsody",answer:true},
+        ]
+    },
+    {
+        question:"The last act at the Woodstock was done by _?",
+        answers:[
+            {option:"Janis Joplin",answer:false},
+            {option:"Jimi Hendrix",answer:true},
+        ]
+    },
+    {
+        question:"What was the name of the singer who played the role of lead singer for the band “Queen”??",
+        answers:[
+            {option:"Freddie Mercury",answer:true},
+            {option:"Ben Moody",answer:false},
         ]
     },
     {
@@ -58,12 +128,12 @@ function beginGame() {
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
         if(questions[currentQuestion].answers[0].answer) {
-            if(score < 10) {
+            if(score < 14) {
                 score++;
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion < 5) {
+        if(currentQuestion < 14) {
             next();
         }
     }
@@ -71,12 +141,12 @@ function beginGame() {
     falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
     falseBtn.onclick = () => {
         if(questions[currentQuestion].answers[1].answer) {
-            if(score < 10) {
+            if(score < 14) {
                 score++;
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion < 2) {
+        if(currentQuestion < 14) {
             next();
         }
     }
@@ -89,7 +159,7 @@ function beginGame() {
 //-------\/----------------RestartGame-----------------\/
 function restart() {
     currentQuestion = 0;
-    nextBtn.classList.remove("hide");
+    // nextBtn.classList.remove("hide");
     submitBtn.classList.remove("hide");
     trueBtn.classList.remove("hide");
     falseBtn.classList.remove("hide");
@@ -102,19 +172,19 @@ function restart() {
 //--------\/--------Next Question Please--------------\/
 function next() {
     currentQuestion++;
-    if(currentQuestion >= 10) {
+    if(currentQuestion >= 14) {
        ;
     }
     questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
         if(questions[currentQuestion].answers[0].answer) {
-            if(score < 10) {
+            if(score < 14) {
                 score++;
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion < 10) {
+        if(currentQuestion < 14) {
             next();
         }
     }
@@ -122,13 +192,13 @@ function next() {
     falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
     falseBtn.onclick = () => {
         if(questions[currentQuestion].answers[1].answer) {
-            if(score < 10) {
+            if(score < 14) {
                 score++;
             }
  
         }
         userScore.innerHTML = score;
-        if(currentQuestion < 10) {
+        if(currentQuestion < 14) {
             next();
         }
     }
@@ -138,7 +208,7 @@ function next() {
 
 //-------------\/------Submit answers------\/
 function submit() {
-    nextBtn.classList.add("hide");
+    // nextBtn.classList.add("hide");
     submitBtn.classList.add("hide");
     trueBtn.classList.add("hide");
     falseBtn.classList.add("hide");   
