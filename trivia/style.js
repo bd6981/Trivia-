@@ -156,6 +156,8 @@ function beginGame() {
  beginGame();
 //--------------------------------------------------------
 
+
+
 //-------\/----------------RestartGame-----------------\/
 function restart() {
     currentQuestion = 0;
@@ -183,6 +185,7 @@ function next() {
                 score++;
             }
         }
+       
         userScore.innerHTML = score;
         if(currentQuestion < 14) {
             next();
