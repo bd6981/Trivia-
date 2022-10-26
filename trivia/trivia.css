@@ -111,16 +111,29 @@
     align-items: center;
     justify-content: center;
  }
-
+#True{
+   margin-top: 10px;
+}
 #True:active {
    background-color: rgb(109, 169, 109);
 }
 #False:active {
 background-color: rgb(200, 75, 75);
 }
-
-
-
+#restart {
+background-color: #41403e;
+color: antiquewhite;
+}
+#restart:active {
+background-color: rgb(37, 75, 118);
+}
+#submit {
+   background-color: #41403e;
+   color: antiquewhite;
+   }
+   #submit:active {
+   background-color: rgb(37, 75, 118);
+   }
 .button-55 {
   align-self: center;
   background-color: #fff;
