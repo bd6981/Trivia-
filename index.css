@@ -1,20 +1,21 @@
+
+/* ------------------This CSS Page Is strickly for Start Game Page - index.html */
+/* ----------------\/--------font styling-------------------\/ */
+
 @font-face {
     font-family: Clip;
     src: url("https://acupoftee.github.io/fonts/Clip.ttf");
   }
-  
   body {
     background-color: #141114;
     background-image: linear-gradient(335deg, black 23px, transparent 23px),
-      linear-gradient(155deg, black 23px, transparent 23px),
-      linear-gradient(335deg, black 23px, transparent 23px),
-      linear-gradient(155deg, black 23px, transparent 23px);
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
     background-size: 58px 58px;
     background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
   }
-
 h4{
-   
    display: flex;
    justify-content: center;
    align-items: center;
@@ -24,11 +25,8 @@ h4{
    margin-top: -80px;
    text-align: center;
    position: relative;
-
-
 }
-
-  .sign {
+.sign {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -96,8 +94,7 @@ h4{
         0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
     }
   }
-  
-  @keyframes flicker {
+   @keyframes flicker {
     from {
       opacity: 1;
     }
@@ -223,6 +220,9 @@ h4{
     }
   }
 
+  /* -----------font styling---------------------^-------------------------------^ */
+
+/* -------------------\/--------------button styling--------------------\/ */
    
 .button-55 {
             align-self: center;
@@ -256,31 +256,10 @@ h4{
             margin-bottom: 10%;
           
           }
-          
           .button-55:hover {
             box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
             transform: translate3d(0, 2px, 0);
-            
-          
           }
-          
           .button-55:focus {
             box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
           }
-          
-body {
-
-}
-h1 {
-    
-    font-family: 'Montserrat', sans-serif;
-    font-weight: medium 500;
-    font-size: 70px;
-    color: antiquewhite;
-    /* margin-top: 0%; */
-    align-items: center;
-    text-align: center;
-    text-decoration-line:underline;
-    background-blend-mode: luminosity 100vh;
-    font-display: center;
-}

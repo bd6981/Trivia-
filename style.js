@@ -1,7 +1,7 @@
+/*----------JavaScript Code for Trivia Game-------*/
 
-
-//-----Button,Elements,EventListeners----\/
-// const nextBtn = document.getElementById("next");
+//-\/---------------Elements--------------\/
+const nextBtn = document.getElementById("next");
 const restartBtn = document.getElementById("restart");
 const submitBtn = document.getElementById("submit");
 const userScore = document.getElementById("user-score");
@@ -9,29 +9,31 @@ const totalScore = document.getElementById("total-score");
 const questionText= document.getElementById("question-text");
 const trueBtn = document.getElementById("True");
 const falseBtn = document.getElementById("False");
+//-----------------Elements------------->----^
 
+//---\/--------------Events-----------------\/    
 restartBtn.addEventListener("click",restart);
-// nextBtn.addEventListener("click",next);
 submitBtn.addEventListener("click",submit);
-//--------------------------------------------------
+//-------------------Events------------->----^
 
-//---\/----trivia questions--------\/
+//---\/--------Trivia Questions-------------\/
+
 let currentQuestion = 1;
 let score = 0;
-
 let questions = [
     {
         question:"What rock star moonlights as a horror movie writer and director?",
         answers:[
-            {option:"Rob Zombie",answer:true},
-            {option:"Ozzy Osbourne",answer:false},
+            {option:"Rob Zombie",answer: true},
+            {option:"Ozzy Osbourne",answer: false},
         ]
+    
     },
     {
         question:"Who was the first woman ever inducted into the Rock and Roll Hall of Fame??",
         answers:[
-            {option:"Dolly Parton",answer:false},
-            {option:"Aretha Franklin",answer:true},
+            {option:"Dolly Parton",answer: false},
+            {option:"Aretha Franklin",answer: true},
         ]
     },
     {
@@ -118,7 +120,7 @@ let questions = [
             {option:"Sting",answer:false},
         ]
     }]
-//--------------------------------------------------------------
+//-----------------------Trivia Questions------------------->----^
 
 //--------\/-------------Let The Games Begin--------------------\/
 function beginGame() {
@@ -132,6 +134,9 @@ function beginGame() {
                 score++;
             }
         }
+
+   
+        
         userScore.innerHTML = score;
         if(currentQuestion < 1) {
             next();
@@ -145,6 +150,8 @@ function beginGame() {
                 score++;
             }
         }
+ 
+        
         userScore.innerHTML = score;
         if(currentQuestion < 1) {
             next();
@@ -154,29 +161,25 @@ function beginGame() {
  }
  
  beginGame();
-//--------------------------------------------------------
+//-----------------------Begin--------------------->----^
 
 
-
-//-------\/----------------RestartGame-----------------\/
+//-------\/------------RestartGame--------------------\/
 function restart() {
     currentQuestion = 0;
-    // nextBtn.classList.remove("hide");
     submitBtn.classList.remove("hide");
     trueBtn.classList.remove("hide");
     falseBtn.classList.remove("hide");
     score = 0;
-    userScore.innerHTML = score;
+    userScore.innerHTML = score.value;
     beginGame();
  } 
-//------------------------------------------------------------
+//----------------------Restart------------------->----^
 
 //--------\/--------Next Question Please--------------\/
 function next() {
     currentQuestion++;
     if(currentQuestion >= 1) {
-       ;
-    }
     questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
@@ -185,7 +188,7 @@ function next() {
                 score++;
             }
         }
-       
+    }}       
         userScore.innerHTML = score;
         if(currentQuestion < 14) {
             next();
@@ -206,20 +209,19 @@ function next() {
         }
     }
   
-}
-//------------------------------------------------------------------
 
-//-------------\/------Submit answers------\/
+//-------------------------Next----------------------->----^
+
+//-------------\/------Submit answers-------------------\/
 function submit() {
-    // nextBtn.classList.add("hide");
     submitBtn.classList.add("hide");
     trueBtn.classList.add("hide");
     falseBtn.classList.add("hide");   
     questionText.innerHTML = "Just remember, You're the rockstar!"
  }
-//------------------------------------------------------------------
+//------------------------submit--------------------->----^
 
-//-------\/-------working on random shuffle below-----------------\/
+//-------\/-------working on random shuffle below------------\/
 //     shuffledQuestions = question.Sort(()  => Math.random() - .5)
 //     currentQuestionIndex = 0
 //     qContainer.classList.remove('hide')
