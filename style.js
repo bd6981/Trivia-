@@ -1,5 +1,4 @@
 
-
 //-----Button,Elements,EventListeners----\/
 // const nextBtn = document.getElementById("next");
 const restartBtn = document.getElementById("restart");
@@ -9,6 +8,9 @@ const totalScore = document.getElementById("total-score");
 const questionText= document.getElementById("question-text");
 const trueBtn = document.getElementById("True");
 const falseBtn = document.getElementById("False");
+const openBtn = document.getElementById('open');
+const modal = document.getElementById('modal')
+const close = document.getElementById('close')
 
 restartBtn.addEventListener("click",restart);
 // nextBtn.addEventListener("click",next);
@@ -216,6 +218,10 @@ function submit() {
  }
 //------------------------------------------------------------------
 
+
+//Functions
+
+
 //-------\/-------working on random shuffle below-----------------\/
 //     shuffledQuestions = question.Sort(()  => Math.random() - .5)
 //     currentQuestionIndex = 0
@@ -233,4 +239,4 @@ function submit() {
 //         }
 //         answerContainer.addEventListener('click', answerButtons)
 //         answerOptions.appendChild(button)
-//  
+//        
