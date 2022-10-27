@@ -14,8 +14,11 @@
     body{
         background-image: url( "w1zhNv6CENc.png");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;}
+        background-size:cover contain;
+        background-position:center ;
+        display: flex;
+        
+    }
 </style>
     <link href="index.html"></link>
     
@@ -30,10 +33,11 @@
     </div>
     <div id="question-area" class="content">
         <div id="question-text"></div>
-            <div class="options">
-                <button class="button-55"  id="True" >True</button>
-                <button  class="button-55" id="False" >False</button>
-            </div>  
+            <div class="options"></div> 
+                <button class="button-55"  id="true"></button>
+                
+                <button  class="button-55" id="false"></button>
+             
         </div>
         <div class="controls">
             <button class="button-55" id="restart">Restart</button>

@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 body {
    background-repeat: no-repeat;
    height: 100vh;
@@ -11,6 +13,7 @@ body {
    align-items: center;
    justify-content: center;
 }
+
 #question-text {
    font-family: 'Montserrat', sans-serif;
    font-weight: medium 500;
@@ -79,8 +82,13 @@ iframe {
 /*----^---<-------Spotify------->-----^--------*/
 
 /*---------Answer Red Green When Clicked----\/---*/
+#true:active {
+background-color: green;
+}
+#false:active {
+   background-color: red;
+}
 
-  
 /*----^----<---Answer Red Green When Clicked---->--^---*/
 
 /*--------------Restart Button----------------------\/ */

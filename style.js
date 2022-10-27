@@ -6,20 +6,21 @@ const submitBtn = document.getElementById("submit");
 const userScore = document.getElementById("user-score");
 const totalScore = document.getElementById("total-score");
 const questionText= document.getElementById("question-text");
-const trueBtn = document.getElementById("True");
-const falseBtn = document.getElementById("False");
-const openBtn = document.getElementById('open');
-const modal = document.getElementById('modal')
-const close = document.getElementById('close')
+const trueBtn = document.getElementById("true");
+
+const falseBtn = document.getElementById("false");
+
 
 restartBtn.addEventListener("click",restart);
 // nextBtn.addEventListener("click",next);
 submitBtn.addEventListener("click",submit);
 //--------------------------------------------------
-
+trueBtn.addEventListener("click", EventTarget);
+falseBtn.addEventListener("click", EventTarget);
 //---\/----trivia questions--------\/
 let currentQuestion = 1;
 let score = 0;
+
 
 let questions = [
     {
@@ -167,6 +168,7 @@ function restart() {
     falseBtn.classList.remove("hide");
     score = 0;
     userScore.innerHTML = score;
+    totalScore.innerHTML = questions.length;
     beginGame();
  } 
 //------------------------------------------------------------
