@@ -81,25 +81,15 @@ iframe {
 }
 /*----^---<-------Spotify------->-----^--------*/
 
-/*---------Answer Red Green When Clicked----\/---*/
-/* .true:active {
-background-color: green;
-}
-.false:active {
-   background-color: red;
-} */
-
-/*----^----<---Answer Red Green When Clicked---->--^---*/
 
 /*--------------Restart Button----------------------\/ */
 #restart {
   
    background-color: #41403e;
    color: antiquewhite;
-   justify-content:flex-end;  
-   margin-bottom: 2vh;
-   margin-top: 2vh;
-   margin-right:40vh;
+   display: flex;
+   flex-direction: row;
+   margin-right: 10rem;
    }
    #restart:active {
       background-color: rgb(37, 75, 118);
@@ -109,19 +99,14 @@ background-color: green;
    }  
 /*-----^-------Restart Button------------------>-----^ */
 .controls{
-   align-items: center;
+   margin : 0 auto;
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
-   margin-inline: 10vh;
-
-
 }
 .options {
    margin : 0 auto;
    display: flex;
    flex-direction: row;
-   margin-bottom: 5vh;
 }
 #true:hover {
    background-color: #41403e;
@@ -138,14 +123,8 @@ background-color: green;
 #submit {
    background-color: #41403e;
    color: antiquewhite;
-   margin-left: 20vh;
    display: flex;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-left: 40vh;
- 
-  scroll-margin-block: 20%;
-
+   
   
 }
    #submit:active {
@@ -155,21 +134,7 @@ background-color: green;
       background-color: rgb(37, 75, 118);
    }
 /*-----------------Submit Button-------------->------^ */
-content{
-   display: flex;
-   flex-direction: column;
-   border: #fff;
 
-}
-p {
-   color: antiquewhite;
-}
-ul {
-   color: antiquewhite;
-}
-li {
-   color: antiquewhite;
-}
 /*-------\/---------Button Styling---------\/---*/
 .button-55 {
   align-self: center;
