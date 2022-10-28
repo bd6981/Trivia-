@@ -122,10 +122,18 @@ background-color: green;
    display: flex;
    flex-direction: row;
    margin-bottom: 5vh;
-   
-
-
 }
+#true:hover {
+   background-color: #41403e;
+   color: antiquewhite;
+}
+#false:hover {
+   background-color: #41403e;
+   color: antiquewhite;
+}  
+
+
+
 /*-------\/----------Submit Button----------------\/ */
 #submit {
    background-color: #41403e;

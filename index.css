@@ -226,7 +226,7 @@ h4{
    
 .button-55 {
             align-self: center;
-            background-color:rgb(243, 217, 184);
+            background-color:rgb(29, 29, 33);
             background-image: none;
             background-position: 0 90%;
             background-repeat: repeat no-repeat;
@@ -256,8 +256,14 @@ h4{
             margin-bottom: 5%;
             margin-top: 80vh;
             display: flex;
-            width: 50vh;
-            margin-left: 85vh;
+            flex-direction: column;
+            justify-content:space-evenly;
+            margin-left: 50vh;
+            margin-right: 50vh;
+            border-spacing: 2vh;
+         
+            
+            
          
 
 
@@ -266,8 +272,11 @@ h4{
           
           }
           .button-55:hover {
-            background-color: rgb(52, 52, 62);
-            color:antiquewhite;
+            color: black important;
+            background-color: rgba(250, 235, 215, 0.486);
+            
+            
+            
             box-shadow: rgba(239, 59, 218, 0.693) 2px 8px 8px -5px;
             transform: translate3d(0, 2px, 0);
           }
@@ -275,7 +284,7 @@ h4{
             box-shadow: rgba(220, 10, 10, 0.3) 2px 8px 4px -6px;
           }
           .button-55:active {
-            background-color: cadetblue;
+            background-color: antiquewhite;;
             
           }
           * {
@@ -286,6 +295,13 @@ h4{
         #btn{
           align-items: center;
           justify-content: center;
+          display: flex;
+          flex-direction: column;
+          font-family: Clip;
+          src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+          color:antiquewhite;
           
         }
+          
+        
         
