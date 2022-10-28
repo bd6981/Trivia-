@@ -1,19 +1,15 @@
 
 //-----Button,Elements,EventListeners----\/
-// const nextBtn = document.getElementById("next");
 const restartBtn = document.getElementById("restart");
 const submitBtn = document.getElementById("submit");
 const userScore = document.getElementById("user-score");
 const totalScore = document.getElementById("total-score");
 const questionText= document.getElementById("question-text");
 const trueBtn = document.getElementById("true");
-
-
 const falseBtn = document.getElementById("false");
 
 
 restartBtn.addEventListener("click",restart);
-// nextBtn.addEventListener("click",next);
 submitBtn.addEventListener("click",submit);
 //--------------------------------------------------
 
@@ -133,7 +129,6 @@ function beginGame() {
         if(questions[currentQuestion].answers[0].answer) {
             trueBtn.classList.remove('false');
             trueBtn.classList.add('true')
-            console.log(trueBtn)
             if(score < 1) {
                 score++;
             }
@@ -150,7 +145,6 @@ function beginGame() {
  
     falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
     falseBtn.addEventListener('click', function () {
-        console.log('false')
         if(questions[currentQuestion].answers[1].answer) {
             falseBtn.classList.remove('true');
             falseBtn.classList.add('false')
@@ -172,7 +166,6 @@ function beginGame() {
 //-------\/----------------RestartGame-----------------\/
 function restart() {
     currentQuestion = 0;
-    // nextBtn.classList.remove("hide");
     submitBtn.classList.remove("hide");
     trueBtn.classList.remove("hide");
     falseBtn.classList.remove("hide");
@@ -231,7 +224,7 @@ function submit() {
 //------------------------------------------------------------------
 
 
-//Functions
+
 
 
 //-------\/-------working on random shuffle below-----------------\/
