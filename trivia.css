@@ -82,21 +82,24 @@ iframe {
 /*----^---<-------Spotify------->-----^--------*/
 
 /*---------Answer Red Green When Clicked----\/---*/
-#true:active {
+/* .true:active {
 background-color: green;
 }
-#false:active {
+.false:active {
    background-color: red;
-}
+} */
 
 /*----^----<---Answer Red Green When Clicked---->--^---*/
 
 /*--------------Restart Button----------------------\/ */
 #restart {
-   margin-right:250px;
-   margin-top: 0 auto;
+  
    background-color: #41403e;
    color: antiquewhite;
+   justify-content:flex-end;  
+   margin-bottom: 2vh;
+   margin-top: 2vh;
+   margin-right:40vh;
    }
    #restart:active {
       background-color: rgb(37, 75, 118);
@@ -105,14 +108,38 @@ background-color: green;
       background-color: rgb(37, 75, 118);
    }  
 /*-----^-------Restart Button------------------>-----^ */
+.controls{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin-inline: 10vh;
 
+
+}
+.options {
+   margin : 0 auto;
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 5vh;
+   
+
+
+}
 /*-------\/----------Submit Button----------------\/ */
 #submit {
    background-color: #41403e;
    color: antiquewhite;
-   margin-left: 400px;
-   margin: 0 auto;
-   }
+   margin-left: 20vh;
+   display: flex;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 40vh;
+ 
+  scroll-margin-block: 20%;
+
+  
+}
    #submit:active {
       background-color: rgb(37, 75, 118);
    }
@@ -120,7 +147,21 @@ background-color: green;
       background-color: rgb(37, 75, 118);
    }
 /*-----------------Submit Button-------------->------^ */
+content{
+   display: flex;
+   flex-direction: column;
+   border: #fff;
 
+}
+p {
+   color: antiquewhite;
+}
+ul {
+   color: antiquewhite;
+}
+li {
+   color: antiquewhite;
+}
 /*-------\/---------Button Styling---------\/---*/
 .button-55 {
   align-self: center;
@@ -151,7 +192,8 @@ background-color: green;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-bottom: 10%;
+
+  
 }
 .button-55:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;

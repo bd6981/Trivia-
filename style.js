@@ -8,6 +8,7 @@ const totalScore = document.getElementById("total-score");
 const questionText= document.getElementById("question-text");
 const trueBtn = document.getElementById("true");
 
+
 const falseBtn = document.getElementById("false");
 
 
@@ -15,8 +16,7 @@ restartBtn.addEventListener("click",restart);
 // nextBtn.addEventListener("click",next);
 submitBtn.addEventListener("click",submit);
 //--------------------------------------------------
-trueBtn.addEventListener("click", EventTarget);
-falseBtn.addEventListener("click", EventTarget);
+
 //---\/----trivia questions--------\/
 let currentQuestion = 1;
 let score = 0;
@@ -129,8 +129,11 @@ function beginGame() {
     totalScore.innerHTML = questions.length;
     questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
-    trueBtn.onclick = () => {
+    trueBtn.addEventListener('click', function () {
         if(questions[currentQuestion].answers[0].answer) {
+            trueBtn.classList.remove('false');
+            trueBtn.classList.add('true')
+            console.log(trueBtn)
             if(score < 1) {
                 score++;
             }
@@ -140,10 +143,18 @@ function beginGame() {
             next();
         }
     }
+)
+
+    
+
  
     falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
-    falseBtn.onclick = () => {
+    falseBtn.addEventListener('click', function () {
+        console.log('false')
         if(questions[currentQuestion].answers[1].answer) {
+            falseBtn.classList.remove('true');
+            falseBtn.classList.add('false')
+
             if(score < 1) {
                 score++;
             }
@@ -153,9 +164,8 @@ function beginGame() {
             next();
         }
     }
-
- }
- 
+)
+} 
  beginGame();
 //--------------------------------------------------------
 
