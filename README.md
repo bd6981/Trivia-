@@ -1,13 +1,13 @@
 ## ** Project 1 | Music Trivia**
 
 ## Set-up ##
-![App](/mainapp.png)
-![trivia](/trivia.png)
+![App](/Users/britt/Desktop/mainapp.png)
+![trivia](//private/var/folders/nb/tc0h8v7160j9sb0hj3byl8gr0000gn/T/TemporaryItems/NSIRD_screencaptureui_qCDXrp/trivia.png)
 
 
 
 ## WireFrame ##
-![WireFrame](/wireframe.png)
+![WireFrame](wireframe.png)
 
 
 ## MVP ##
@@ -45,3 +45,5 @@ https://simplestepscode.com/javascript-quiz-tutorial/
 https://simplestepscode.com › javascript-quiz-tutorial
 
 https://www.w3schools.com/js/js_quiz.asp
+
+https://github.com/bd6981/Trivia-/raw/Portfolio/trivia.png
